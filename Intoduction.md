@@ -1,5 +1,5 @@
 # What is Shell Scripting?
-Shell scripting is the process of writing and executing scripts in a shell (command-line interpreter) to automate tasks. It involves using scripting languages, such as Bash, to write a series of commands and instructions that can be executed sequentially. Shell scripts are commonly used in Unix-like operating systems for system administration and automation purposes.
+Shell scripting is the process of writing and executing scripts in a shell (command-line interpreter) to automate tasks. It involves using scripting languages, such as BASH, BOURNE, Z Shell, and C Shell. To write a series of commands and instructions that can be executed sequentially. Shell scripts are commonly used in Unix-like operating systems for system administration and automation purposes.
 
 # Why we need Shell Scripting
 Shell scripting is a versatile tool that can automate a wide range of tasks. Here are some examples of tasks commonly performed using shell scripting:
