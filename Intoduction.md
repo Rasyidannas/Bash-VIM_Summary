@@ -17,3 +17,5 @@ Shell scripting is a versatile tool that can automate a wide range of tasks. Her
 # Shortcut in Bash
 ## Aliases
 An alias in Bash is a way to create a shortcut for a command or a series of commands. You can see default aliases by writing `alias`, for making new alias you can write `alias [name]='[command]'`, but this way only temporary alias. If you want to make a permanent alias you can edit with Vim by writing `vim ~/.bashrc`. `unalias [name]` is for deleting or removing an existing alias.
+
+#### Note: [Practice Repo] (https://github.com/Rasyidannas/Bash-VIM_Practice)
