@@ -95,3 +95,7 @@ Bash Quoting Mechanisms:
 ## How to get user input as variables
 
 you can use `read [variable_name]` and then enter the value, if you don't write variable_name or only `read`, you can call it `echo $REPLY`
+
+## What is Positional Parameters?
+
+In programming, positional parameters are a type of function or method parameters that are identified by their position in the function or method call. This is example in bash language `apt install nginx`, `apt` is script name | `install` is first argument | and `nginx` is second argument
