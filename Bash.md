@@ -55,6 +55,8 @@ distro="Kali Linux"
 age=25
 distro="Ubuntu"
 my_distro="$os $distro"
+fruits=(apple banana cherry) # this is for declare array
+echo ${fruits[1]}
 echo $my_distro
 ```
 
@@ -87,5 +89,9 @@ Bash Quoting Mechanisms:
    - used to padd information to processes that are spawwned from the current sheel
    - displayed using `env` or `printenv`
 2. Shell Variables
-   - are contained exclusively within the shell in which they were set
+   - are contained exclusively within the shell in which they were set and temporary
    - display using set
+
+## How to get user input as variables
+
+you can use `read [variable_name]` and then enter the value, if you don't write variable_name or only `read`, you can call it `echo $REPLY`
