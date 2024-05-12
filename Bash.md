@@ -99,3 +99,21 @@ you can use `read [variable_name]` and then enter the value, if you don't write 
 ## What is Positional Parameters?
 
 In programming, positional parameters are a type of function or method parameters that are identified by their position in the function or method call. This is example in bash language `apt install nginx`, `apt` is script name | `install` is first argument | and `nginx` is second argument
+
+## what is Special Parameters?
+
+In Bash scripting, special parameters are predefined variables that have specific meanings and uses. These parameters are typically represented by symbols or special characters. Here are some of the most commonly used special parameters in Bash:
+
+1. $0 - The name of the script itself or the name of the shell.
+2. $1 to $9 - These represent the positional parameters. $1 is the first argument passed to the script, $2 is the second, and so on up to $9.
+3. ${10}, ${11}, ... - For positional parameters beyond 9, you must enclose the number in braces.
+4. $# - The number of positional parameters passed to the script.
+5. $* - All the positional parameters seen as a single word. When quoted, "${\*}", it expands to a single string with the positional parameters separated by the first character of the IFS variable.
+6. $@ - All the positional parameters, but when quoted, "${@}", each parameter is treated as a separate word or string. This is particularly useful in loops and functions.
+7. $? - The exit status of the last command executed. An exit status of 0 typically indicates success, while any non-zero value indicates an error.
+8. $$ - The process ID (PID) of the current shell. Useful for creating unique temporary file names.
+9. $! - The PID of the last background command.
+10. $- - The current options set for the shell.
+
+> note
+> Bash doesn't support asynchronous programming, but you cna use **Bakground Processes** is running a command in the background by appending an & to the end of the command. This allows your script to continue executing subsequent commands without waiting for the background command to finish.
