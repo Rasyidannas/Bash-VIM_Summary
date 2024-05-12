@@ -58,7 +58,7 @@ my_distro="$os $distro"
 echo $my_distro
 ```
 
-you can find variable using `set | grep [variable_name]`, for remove variable use this `echo $distro`.
+you can find variable using `set | grep [variable_name]`, for print variable `echo $[variable_name]` and for remove variable use this `unset [variable_name]`.
 
 ## How to declare constant variable
 
