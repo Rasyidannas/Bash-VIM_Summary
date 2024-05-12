@@ -79,3 +79,13 @@ Bash Quoting Mechanisms:
 1. Single quotes => ''
 2. Double quotes => "" _this is more prefer use because it can read refernce variable and escape charcter_
 3. The escape character => \
+
+## What is Environment vs Shell Local Variables
+
+1. Environment variables
+   - are inherited by any child shells or processes
+   - used to padd information to processes that are spawwned from the current sheel
+   - displayed using `env` or `printenv`
+2. Shell Variables
+   - are contained exclusively within the shell in which they were set
+   - display using set
