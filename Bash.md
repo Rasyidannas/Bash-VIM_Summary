@@ -58,8 +58,24 @@ my_distro="$os $distro"
 echo $my_distro
 ```
 
-you can find variable using `set | grep [variable_name]`, for print variable `echo $[variable_name]` and for remove variable use this `unset [variable_name]`.
+you can find variable using `set | grep [variable_name]`, for print variable `echo $[variable_name]` or `echo ${[variable_name]}` and for remove variable use this `unset [variable_name]`.
 
 ## How to declare constant variable
 
 You should write `declare [option] [variable_name]=[value]`. Example for declare with provided value from another file `declare -r LOGDIR=/var/log`.
+
+## How to do Variable Assigning & Expansion
+
+1. Assigning a value to a variab;e
+   `version=10` _no space around the equal sign_
+2. Referencing the value of a variable
+   `echo $version` _the $ character introduces parameter expansion, command substitution, or arithmetic expansion._
+
+## How about Quoting
+
+Quoting is used to remove the special meaning of certain characters or words.  
+Bash Quoting Mechanisms:
+
+1. Single quotes => ''
+2. Double quotes => "" _this is more prefer use because it can read refernce variable and escape charcter_
+3. The escape character => \
