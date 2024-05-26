@@ -120,7 +120,7 @@ In Bash scripting, special parameters are predefined variables that have specifi
 Shell expansions in Unix-like operating systems refer to a set of processes where the shell (e.g., bash, zsh) interprets and expands specific characters or sequences in a command line before executing the command. These expansions allow users to use shortcuts and more powerful constructs in their commands. The main types of shell expansions are:
 
 1. Brace expansion, for generates a sequence of strings from a pattern containing braces.
-    - Example:  `echo file{1,2,3}.txt` becomes `file1.txt file2.txt file3.txt`
+    - Example:  `echo file{1,2,3}.txt` becomes `file1.txt file2.txt file3.txt` | `echo {1..5}` becomes `1 2 3 4 5` | `echo {a..e}` becomes `a b c d e` | `echo {1..10..2}` becomes `1 3 5 7 9`
 2. Tilde expansion
 3. Parameter and variable expansion
 4. Command substitution
