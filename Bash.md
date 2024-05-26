@@ -115,5 +115,18 @@ In Bash scripting, special parameters are predefined variables that have specifi
 9. $! - The PID of the last background command.
 10. $- - The current options set for the shell.
 
+## What is Shell Expensions?
+
+Shell expansions in Unix-like operating systems refer to a set of processes where the shell (e.g., bash, zsh) interprets and expands specific characters or sequences in a command line before executing the command. These expansions allow users to use shortcuts and more powerful constructs in their commands. The main types of shell expansions are:
+
+1. Brace expansion
+2. Tilde expansion
+3. Parameter and variable expansion
+4. Command substitution
+5. Arithmetic expansion
+6. Process substitution
+7. Word splitting
+8. Filename expansion (Globbing)
+
 > note
 > Bash doesn't support asynchronous programming, but you cna use **Bakground Processes** is running a command in the background by appending an & to the end of the command. This allows your script to continue executing subsequent commands without waiting for the background command to finish.
