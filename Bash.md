@@ -123,12 +123,14 @@ Shell expansions in Unix-like operating systems refer to a set of processes wher
    - Example: `echo file{1,2,3}.txt` becomes `file1.txt file2.txt file3.txt` | `echo {1..5}` becomes `1 2 3 4 5` | `echo {a..e}` becomes `a b c d e` | `echo {1..10..2}` becomes `1 3 5 7 9`
 2. Tilde expansion, for expands to home directories, current or previous working directory, directories from the directories the directory stack.
    - Examples: `~` => $HOME of the current user, `~USER` => User's home directory, `~+` => $PWD, `~-` => $OLDPWD
-3. Parameter and variable expansion
-4. Command substitution
+3. Parameter and variable expansion, $ symbol introduces parameter expansion
+   - Examples: `echo $USER`, `echo ${HOME}`
+4. Command substitution, it means saving the output of a command in a variable.
+   - Examples: `p="$(ping -c 1 8.8.8.8)"`, `users="`cut -d: f1 /etc/passwd`"`
 5. Arithmetic expansion
 6. Process substitution
 7. Word splitting
 8. Filename expansion (Globbing)
 
 > note
-> Bash doesn't support asynchronous programming, but you cna use **Bakground Processes** is running a command in the background by appending an & to the end of the command. This allows your script to continue executing subsequent commands without waiting for the background command to finish.
+> Bash doesn't support asynchronous programming, but you can use **Bakground Processes** is running a command in the background by appending an & to the end of the command. This allows your script to continue executing subsequent commands without waiting for the background command to finish.
