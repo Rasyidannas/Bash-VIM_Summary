@@ -96,11 +96,11 @@ Bash Quoting Mechanisms:
 
 you can use `read [variable_name]` and then enter the value, if you don't write variable_name or only `read`, you can call it `echo $REPLY`
 
-## What is Positional Parameters?
+# What is Positional Parameters?
 
 In programming, positional parameters are a type of function or method parameters that are identified by their position in the function or method call. This is example in bash language `apt install nginx`, `apt` is script name | `install` is first argument | and `nginx` is second argument
 
-## what is Special Parameters?
+## What is Special Parameters?
 
 In Bash scripting, special parameters are predefined variables that have specific meanings and uses. These parameters are typically represented by symbols or special characters. Here are some of the most commonly used special parameters in Bash:
 
@@ -115,7 +115,7 @@ In Bash scripting, special parameters are predefined variables that have specifi
 9. $! - The PID of the last background command.
 10. $- - The current options set for the shell.
 
-## What is Shell Expensions?
+# What is Shell Expensions?
 
 Shell expansions in Unix-like operating systems refer to a set of processes where the shell (e.g., bash, zsh) interprets and expands specific characters or sequences in a command line before executing the command. These expansions allow users to use shortcuts and more powerful constructs in their commands. The main types of shell expansions are:
 
@@ -129,9 +129,10 @@ Shell expansions in Unix-like operating systems refer to a set of processes wher
    - Examples: `p="$(ping -c 1 8.8.8.8)"`, `users="`cut -d: f1 /etc/passwd`"`
 5. Arithmetic expansion, It's used to perform mathematical computation.
    - Examples: `a=$((2**10))`, `b=$((10*5/2))`, `let y=2**2`, `echo 2*7 | bc`, `echo "scale2;11/4" | bc`
-6. Process substitution
+6. Process substitution, It means to reference the output of a process as a file.
+   - Examples: `<(ls)`
 7. Word splitting
 8. Filename expansion (Globbing)
 
 > note
-> Bash doesn't support asynchronous programming, but you can use **Bakground Processes** is running a command in the background by appending an & to the end of the command. This allows your script to continue executing subsequent commands without waiting for the background command to finish.
+> Bash doesn't support asynchronous programming, but you can use **Bakground Processes** is running a command in the background by appending an `&` to the end of the command. This allows your script to continue executing subsequent commands without waiting for the background command to finish.
