@@ -11,7 +11,7 @@
      ```
 4. `chmod +x first_script` or `chmod 700 first_script`
 5. `./first_script.sh`  
-   To make a shortcut without into the directory file, you can define a new variable in `.bashrc` file, like this `export PATH="$PATH:~/scripts"`. So you can just call `first_script.sh`
+   To make a shortcut without into the directory file, you can define a new variable in `~/.bashrc` file, like this `export PATH="$PATH:~/scripts"`. So you can just call `first_script.sh`
 
 # What is Shebang?
 
@@ -133,7 +133,8 @@ Shell expansions in Unix-like operating systems refer to a set of processes wher
    - Examples: `<(ls)`
 7. Word splitting, It means splitting into individual words the result of the unquoted expansions. If you want to edit sperator you can set `IFS` variable for first and the default `IFS` is space.
    - Examples: `dirs="dir1 dir2"` then `mkdir #dirs` (this will make 2 directories), but `mkdir "$dirs"` (this will make 1 directories)
-8. Filename expansion (Globbing)
+8. Filename expansion (Globbing), use without `""` or `''` in terminal
+   - Examples: `*` matches any string, including emptiness, `?` matches any single character, `[]` matches a single character from within a range.
 
 > note
 > Bash doesn't support asynchronous programming, but you can use **Bakground Processes** is running a command in the background by appending an `&` to the end of the command. This allows your script to continue executing subsequent commands without waiting for the background command to finish.
