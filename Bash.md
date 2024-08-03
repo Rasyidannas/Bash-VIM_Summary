@@ -131,7 +131,8 @@ Shell expansions in Unix-like operating systems refer to a set of processes wher
    - Examples: `a=$((2**10))`, `b=$((10*5/2))`, `let y=2**2`, `echo 2*7 | bc`, `echo "scale2;11/4" | bc`
 6. Process substitution, It means to reference the output of a process as a file.
    - Examples: `<(ls)`
-7. Word splitting
+7. Word splitting, It means splitting into individual words the result of the unquoted expansions. If you want to edit sperator you can set `IFS` variable for first and the default `IFS` is space.
+   - Examples: `dirs="dir1 dir2"` then `mkdir #dirs` (this will make 2 directories), but `mkdir "$dirs"` (this will make 1 directories)
 8. Filename expansion (Globbing)
 
 > note
