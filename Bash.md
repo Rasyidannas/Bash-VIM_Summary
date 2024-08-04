@@ -134,7 +134,7 @@ Shell expansions in Unix-like operating systems refer to a set of processes wher
 7. Word splitting, It means splitting into individual words the result of the unquoted expansions. If you want to edit sperator you can set `IFS` variable for first and the default `IFS` is space.
    - Examples: `dirs="dir1 dir2"` then `mkdir #dirs` (this will make 2 directories), but `mkdir "$dirs"` (this will make 1 directories)
 8. Filename expansion (Globbing), use without `""` or `''` in terminal
-   - Examples: `*` matches any string, including emptiness, `?` matches any single character, `[]` matches a single character from within a range.
+   - Examples: `*` matches any string, including emptiness, `?` matches any single character, `[]` matches a single character from within a range and you can use `[a-e]` it is mean a until e (you can put the regex inside it).
 
 > note
 > Bash doesn't support asynchronous programming, but you can use **Bakground Processes** is running a command in the background by appending an `&` to the end of the command. This allows your script to continue executing subsequent commands without waiting for the background command to finish.
